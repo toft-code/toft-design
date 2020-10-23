@@ -2,6 +2,7 @@
   "name": "toft-design",
   "version": "0.1.0",
   "dependencies": {
+    "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "3.4.4",
