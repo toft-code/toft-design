@@ -7,8 +7,9 @@ import './index.css'
 function App() {
   return (
     <div className='App bodyContainer'>
+      <h1>Toft Design</h1>
       {/* Button */}
-      <h1>Button</h1>
+      <h2>Button</h2>
 
       <div>
         <span style={{ margin: 10 }}>
@@ -37,7 +38,7 @@ function App() {
       </div>
 
       {/* Input */}
-      <h1>Input</h1>
+      <h2>Input</h2>
       <div>
         <div style={{ margin: 10 }}>
           <Input size='small' placeholder='Small Input'></Input>
@@ -50,7 +51,7 @@ function App() {
         </div>
       </div>
 
-      <h1>Textarea</h1>
+      <h2>Textarea</h2>
       <div style={{ margin: 10 }}>
         <Textarea placeholder='Textarea'></Textarea>
       </div>
