@@ -1,24 +1,28 @@
 import React from 'react'
+import cn from 'classnames'
 import './index.scss'
 
-type Props = {
+export type InputProps = {
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void
   placeholder?: string
   size?: 'large' | 'normal' | 'small'
 }
 
-const Input: React.FC<Props> = (props) => {
-  const { size, placeholder } = props
-  let className = 'input'
+const Input: React.FC<InputProps> = (props) => {
+  const { size, placeholder, onChange } = props
 
-  if (size === 'large') {
-    className += ' large'
-  }
-
-  if (size === 'small') {
-    className += ' small'
-  }
-
-  return <input placeholder={placeholder} className={className} type='text' />
+  return (
+    <input
+      className={cn({
+        input: true,
+        large: size === 'large',
+        small: size === 'small',
+      })}
+      onChange={onChange}
+      placeholder={placeholder}
+      type='text'
+    />
+  )
 }
 
 export default Input
