@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/Button'
 import Input from '../components/Input'
+import Tag from '../components/Tag'
 import Textarea from '../components/Textarea'
 import './index.css'
 
@@ -55,6 +56,15 @@ function App() {
       <div style={{ margin: 10 }}>
         <Textarea placeholder='Textarea'></Textarea>
       </div>
+
+      <h2>Tag</h2>
+      <span style={{ margin: 10 }}>
+        <Tag>Default</Tag>
+        <Tag color='green'>Success</Tag>
+        <Tag color='blue'>Info</Tag>
+        <Tag color='red'>Error</Tag>
+        <Tag color='orange'>Warning</Tag>
+      </span>
     </div>
   )
 }
