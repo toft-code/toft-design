@@ -1,0 +1,65 @@
+$border-radius-base: 3px;
+$tag-font-size: 12px;
+
+.tag {
+  border-radius: $border-radius-base;
+  cursor: default;
+  display: inline-block;
+  font-size: $tag-font-size;
+  height: auto;
+  line-height: 1;
+  margin-right: 8px;
+  opacity: 1;
+  padding: 4px 8px;
+  transition: all 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.default {
+    color: #333;
+    background: #eee;
+
+    &.border {
+      border: 1px solid rgba($color: #333, $alpha: 0.6);
+    }
+  }
+
+  &.green {
+    color: #4dc313;
+    background: #f3ffe6;
+
+    &.border {
+      border: 1px solid rgba($color: #4dc313, $alpha: 0.6);
+    }
+  }
+
+  &.blue {
+    color: #279eff;
+    background: #eef7ff;
+
+    &.border {
+      border: 1px solid rgba($color: #279eff, $alpha: 0.6);
+    }
+  }
+
+  &.red {
+    color: #ea5252;
+    background: #fbefef;
+
+    &.border {
+      border: 1px solid rgba($color: #ea5252, $alpha: 0.6);
+    }
+  }
+
+  &.orange {
+    color: #ff9d2a;
+    background: #fff7ee;
+
+    &.border {
+      border: 1px solid rgba($color: #ff9d2a, $alpha: 0.6);
+    }
+  }
+}

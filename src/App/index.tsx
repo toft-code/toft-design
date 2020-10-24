@@ -58,13 +58,28 @@ function App() {
       </div>
 
       <h2>Tag</h2>
-      <span style={{ margin: 10 }}>
+      <div style={{ margin: 10 }}>
         <Tag>Default</Tag>
         <Tag color='green'>Success</Tag>
         <Tag color='blue'>Info</Tag>
         <Tag color='red'>Error</Tag>
         <Tag color='orange'>Warning</Tag>
-      </span>
+      </div>
+      <div style={{ margin: 10 }}>
+        <Tag border>Default</Tag>
+        <Tag border color='green'>
+          Success
+        </Tag>
+        <Tag border color='blue'>
+          Info
+        </Tag>
+        <Tag border color='red'>
+          Error
+        </Tag>
+        <Tag border color='orange'>
+          Warning
+        </Tag>
+      </div>
     </div>
   )
 }
