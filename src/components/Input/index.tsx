@@ -2,11 +2,23 @@ import React from 'react'
 import './index.scss'
 
 type Props = {
-  placeholder: string
+  placeholder?: string
+  size?: 'large' | 'normal' | 'small'
 }
 
 const Input: React.FC<Props> = (props) => {
-  return <input {...props} className='input' type='text' />
+  const { size, placeholder } = props
+  let className = 'input'
+
+  if (size === 'large') {
+    className += ' large'
+  }
+
+  if (size === 'small') {
+    className += ' small'
+  }
+
+  return <input placeholder={placeholder} className={className} type='text' />
 }
 
 export default Input

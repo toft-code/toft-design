@@ -10,34 +10,44 @@ function App() {
       <h1>Button</h1>
 
       <div>
-        <span style={{ margin: 8 }}>
+        <span style={{ margin: 10 }}>
           <Button primary size='small'>
             Button
           </Button>
         </span>
-        <span style={{ margin: 8 }}>
+        <span style={{ margin: 10 }}>
           <Button primary>Button</Button>
         </span>
-        <span style={{ margin: 8 }}>
+        <span style={{ margin: 10 }}>
           <Button primary size='large'>
             Button
           </Button>
         </span>
 
-        <span style={{ margin: 8 }}>
+        <span style={{ margin: 10 }}>
           <Button size='small'>Button</Button>
         </span>
-        <span style={{ margin: 8 }}>
+        <span style={{ margin: 10 }}>
           <Button>Button</Button>
         </span>
-        <span style={{ margin: 8 }}>
+        <span style={{ margin: 10 }}>
           <Button size='large'>Button</Button>
         </span>
       </div>
 
       {/* Input */}
       <h1>Input</h1>
-      <Input placeholder='Please Input'></Input>
+      <div>
+        <div style={{ margin: 10 }}>
+          <Input size='small' placeholder='Small Input'></Input>
+        </div>
+        <div style={{ margin: 10 }}>
+          <Input placeholder='Normal Input'></Input>
+        </div>
+        <div style={{ margin: 10 }}>
+          <Input size='large' placeholder='Large Input'></Input>
+        </div>
+      </div>
 
       <h1>Tag</h1>
     </div>
