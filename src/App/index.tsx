@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../components/Button'
 import Input from '../components/Input'
+import Textarea from '../components/Textarea'
 import './index.css'
 
 function App() {
@@ -49,7 +50,10 @@ function App() {
         </div>
       </div>
 
-      <h1>Tag</h1>
+      <h1>Textarea</h1>
+      <div style={{ margin: 10 }}>
+        <Textarea placeholder='Textarea'></Textarea>
+      </div>
     </div>
   )
 }
