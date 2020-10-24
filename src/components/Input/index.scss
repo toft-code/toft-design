@@ -1,25 +1,22 @@
 .input {
   height: 32px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  color: #172b4d;
+  color: #262626;
   font-size: 14px;
   font-style: normal;
   line-height: 32px;
   background-color: #f4f5f7;
-  border: 1px solid #dfe1e6;
-  padding: 0 6px;
+  border: 1px solid transparent;
+  padding: 0 10px;
   box-sizing: border-box;
   border-radius: 3px;
 
   &:hover {
-    background-color: #ebecf0;
+    background-color: #f0f0f0;
   }
 
   &:focus {
     background-color: #fff;
-    border: 1px solid #4c9aff;
     outline: 0;
-    box-shadow: 0 0 0 1px #4c9aff;
+    box-shadow: 0 0 0 2px #3087f8;
   }
 }

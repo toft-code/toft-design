@@ -18,14 +18,36 @@
   text-decoration: none;
   vertical-align: baseline;
   white-space: nowrap;
+  user-select: none;
+
+  &.large {
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &.small {
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+  }
 
   &.primary {
     color: white;
-    background: #398af3;
-  }
+    background: #3087f8;
 
-  &:active {
-    background: #222;
+    &:hover {
+      color: white;
+      background: #5a9ef7;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px white, 0 0 0 3px #3087f8;
+    }
+
+    &:active {
+      background: #347bd8;
+    }
   }
 
   &:hover {
@@ -35,6 +57,10 @@
   }
 
   &:focus {
-    box-shadow: 0 0 0 2px #4c9aff;
+    box-shadow: 0 0 0 2px #3087f8;
+  }
+
+  &:active {
+    background: #cccdcf;
   }
 }
