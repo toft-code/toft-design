@@ -31,8 +31,7 @@ $tag-font-size: 12px;
 
   @include color(default, #333, #eee);
   @include color(green, #4dc313, #f3ffe6);
-  @include color(blue, #a6a6a7, #eef7ff);
+  @include color(blue, #279eff, #eef7ff);
   @include color(red, #ea5252, #fbefef);
-  @include color(blue, #a6a6a7, #eef7ff);
   @include color(orange, #ff9d2a, #fff7ee);
 }
