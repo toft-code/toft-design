@@ -6,30 +6,13 @@ import './index.css'
 import TagExample from './TagExample'
 import TextareaExample from './TextareaExample'
 import MainTitle from './MainTitle'
+import Nav from '../components/Nav'
 
 function App() {
   return (
     <div className='App'>
       <Router>
-        <nav>
-          <ul>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/button'>Button</Link>
-            </li>
-            <li>
-              <Link to='/input'>Input</Link>
-            </li>
-            <li>
-              <Link to='/textarea'>Textarea</Link>
-            </li>
-            <li>
-              <Link to='/tag'>Tag</Link>
-            </li>
-          </ul>
-        </nav>
+        <Nav></Nav>
 
         <div className='bodyContainer'>
           <Switch>
