@@ -1,6 +1,17 @@
 $border-radius-base: 3px;
 $tag-font-size: 12px;
 
+@mixin color($name, $color, $bgColor) {
+  &.#{$name} {
+    color: $color;
+    background: $bgColor;
+
+    &.border {
+      border: 1px solid rgba($color: $color, $alpha: 0.6);
+    }
+  }
+}
+
 .tag {
   border-radius: $border-radius-base;
   cursor: default;
@@ -18,48 +29,10 @@ $tag-font-size: 12px;
     opacity: 0.8;
   }
 
-  &.default {
-    color: #333;
-    background: #eee;
-
-    &.border {
-      border: 1px solid rgba($color: #333, $alpha: 0.6);
-    }
-  }
-
-  &.green {
-    color: #4dc313;
-    background: #f3ffe6;
-
-    &.border {
-      border: 1px solid rgba($color: #4dc313, $alpha: 0.6);
-    }
-  }
-
-  &.blue {
-    color: #279eff;
-    background: #eef7ff;
-
-    &.border {
-      border: 1px solid rgba($color: #279eff, $alpha: 0.6);
-    }
-  }
-
-  &.red {
-    color: #ea5252;
-    background: #fbefef;
-
-    &.border {
-      border: 1px solid rgba($color: #ea5252, $alpha: 0.6);
-    }
-  }
-
-  &.orange {
-    color: #ff9d2a;
-    background: #fff7ee;
-
-    &.border {
-      border: 1px solid rgba($color: #ff9d2a, $alpha: 0.6);
-    }
-  }
+  @include color(default, #333, #eee);
+  @include color(green, #4dc313, #f3ffe6);
+  @include color(blue, #a6a6a7, #eef7ff);
+  @include color(red, #ea5252, #fbefef);
+  @include color(blue, #a6a6a7, #eef7ff);
+  @include color(orange, #ff9d2a, #fff7ee);
 }
