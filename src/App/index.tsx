@@ -12,21 +12,8 @@ function App() {
       {/* Button */}
       <h2>Button</h2>
 
+      <h3>Default</h3>
       <div>
-        <span style={{ margin: 10 }}>
-          <Button primary size='small'>
-            Button
-          </Button>
-        </span>
-        <span style={{ margin: 10 }}>
-          <Button primary>Button</Button>
-        </span>
-        <span style={{ margin: 10 }}>
-          <Button primary size='large'>
-            Button
-          </Button>
-        </span>
-
         <span style={{ margin: 10 }}>
           <Button size='small'>Button</Button>
         </span>
@@ -35,6 +22,55 @@ function App() {
         </span>
         <span style={{ margin: 10 }}>
           <Button size='large'>Button</Button>
+        </span>
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <span style={{ margin: 10 }}>
+          <Button disabled size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled>Button</Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled size='large'>
+            Button
+          </Button>
+        </span>
+      </div>
+
+      <h3>Primary</h3>
+      <div>
+        <span style={{ margin: 10 }}>
+          <Button type='primary' size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button type='primary'>Button</Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button type='primary' size='large'>
+            Button
+          </Button>
+        </span>
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='primary' size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='primary'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='primary' size='large'>
+            Button
+          </Button>
         </span>
       </div>
 
