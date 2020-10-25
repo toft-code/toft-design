@@ -1,4 +1,5 @@
 import React from 'react'
+import cn from 'classnames'
 import './index.scss'
 
 type Props = {
@@ -10,21 +11,17 @@ type Props = {
 const Button: React.FC<Props> = (props) => {
   const { children, primary, size } = props
 
-  let className = 'button'
-
-  if (primary) {
-    className += ' primary'
-  }
-
-  if (size === 'large') {
-    className += ' large'
-  }
-
-  if (size === 'small') {
-    className += ' small'
-  }
-
-  return <button className={className}>{children}</button>
+  return (
+    <button
+      className={cn({
+        button: true,
+        primary,
+        large: size === 'large',
+        small: size === 'small',
+      })}>
+      {children}
+    </button>
+  )
 }
 
 export default Button
