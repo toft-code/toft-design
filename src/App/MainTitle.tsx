@@ -4,12 +4,12 @@ const MainTitle: React.FC<any> = () => {
   return (
     <h1 style={{ margin: 100, fontSize: 66, textAlign: 'center' }}>
       <svg
-        width='128'
-        viewBox='0 0 1688 1372'
+        width='168'
+        viewBox='0 0 1688 1368'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'>
         <path
-          d='M700 288H988V1360C988 1366.63 982.627 1372 976 1372H712C705.373 1372 700 1366.63 700 1360V288Z'
+          d='M700 284H988V1356C988 1362.63 982.627 1368 976 1368H712C705.373 1368 700 1362.63 700 1356V284Z'
           fill='url(#paint0_linear)'
         />
         <path
@@ -20,9 +20,9 @@ const MainTitle: React.FC<any> = () => {
           <linearGradient
             id='paint0_linear'
             x1='715.5'
-            y1='301.5'
+            y1='297.5'
             x2='844'
-            y2='1372'
+            y2='1368'
             gradientUnits='userSpaceOnUse'>
             <stop stop-color='#065AD4' />
             <stop offset='1' stop-color='#328BFF' />
@@ -40,6 +40,7 @@ const MainTitle: React.FC<any> = () => {
           </linearGradient>
         </defs>
       </svg>
+
       <div>Toft Design</div>
     </h1>
   )
