@@ -114,6 +114,7 @@ function App() {
       </div>
 
       <h2>Tag</h2>
+      <h3>Default</h3>
       <div style={{ margin: 10 }}>
         <Tag>Default</Tag>
         <Tag color='green'>Success</Tag>
@@ -121,6 +122,8 @@ function App() {
         <Tag color='red'>Error</Tag>
         <Tag color='orange'>Warning</Tag>
       </div>
+
+      <h3>Border</h3>
       <div style={{ margin: 10 }}>
         <Tag border>Default</Tag>
         <Tag border color='green'>
