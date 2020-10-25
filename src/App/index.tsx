@@ -77,20 +77,40 @@ function App() {
       {/* Input */}
       <h2>Input</h2>
       <div>
-        <div style={{ margin: 10 }}>
+        <span style={{ margin: 10 }}>
           <Input size='small' placeholder='Small Input'></Input>
-        </div>
-        <div style={{ margin: 10 }}>
+        </span>
+        <span style={{ margin: 10 }}>
           <Input placeholder='Normal Input'></Input>
-        </div>
-        <div style={{ margin: 10 }}>
+        </span>
+        <span style={{ margin: 10 }}>
           <Input size='large' placeholder='Large Input'></Input>
-        </div>
+        </span>
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <span style={{ margin: 10 }}>
+          <Input
+            disabled
+            size='small'
+            placeholder='Small Input Disabled'></Input>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Input disabled placeholder='Normal Input Disabled'></Input>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Input
+            disabled
+            size='large'
+            placeholder='Large Input Disabled'></Input>
+        </span>
       </div>
 
       <h2>Textarea</h2>
       <div style={{ margin: 10 }}>
         <Textarea placeholder='Textarea'></Textarea>
+      </div>
+      <div style={{ margin: 10 }}>
+        <Textarea disabled placeholder='Textarea Disabled'></Textarea>
       </div>
 
       <h2>Tag</h2>
