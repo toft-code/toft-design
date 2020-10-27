@@ -34,6 +34,7 @@ const ButtonExample: React.FC<Props> = (props) => {
           </Button>
         </span>
       </div>
+
       <h2>Primary</h2>
       <div>
         <span style={{ margin: 10 }}>
@@ -63,6 +64,40 @@ const ButtonExample: React.FC<Props> = (props) => {
         </span>
         <span style={{ margin: 10 }}>
           <Button disabled type='primary' size='large'>
+            Button
+          </Button>
+        </span>
+      </div>
+
+      <h2>Text</h2>
+      <div>
+        <span style={{ margin: 10 }}>
+          <Button type='text' size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button type='text'>Button</Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button type='text' size='large'>
+            Button
+          </Button>
+        </span>
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='text' size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='text'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='text' size='large'>
             Button
           </Button>
         </span>

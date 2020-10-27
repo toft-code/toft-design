@@ -61,6 +61,30 @@
     }
   }
 
+  &.text {
+    // color: #3087f8;
+    color: #333;
+    background: transparent;
+
+    &:hover {
+      background: #ebecf0;
+      border: none;
+      color: #444;
+    }
+
+    &:active {
+      background: #cccdcf;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px #3087f8;
+    }
+
+    &[disabled] {
+      color: rgb(171, 171, 171);
+    }
+  }
+
   // Primary
   &.primary {
     color: white;
