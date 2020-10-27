@@ -20,6 +20,9 @@ const Nav: React.FC<NavProps> = (props) => {
         <Link to='/textarea'>
           <li className='nav-item'>Textarea</li>
         </Link>
+        <Link to='/field'>
+          <li className='nav-item'>Field</li>
+        </Link>
         <Link to='/tag'>
           <li className='nav-item'>Tag</li>
         </Link>

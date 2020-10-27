@@ -7,6 +7,7 @@ import TagExample from './TagExample'
 import TextareaExample from './TextareaExample'
 import MainTitle from './MainTitle'
 import Nav from '../components/Nav'
+import FieldExample from './FieldExample'
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path='/textarea'>
               <TextareaExample></TextareaExample>
+            </Route>
+            <Route path='/field'>
+              <FieldExample></FieldExample>
             </Route>
             <Route path='/'>
               <MainTitle></MainTitle>
