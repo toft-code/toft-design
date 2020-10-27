@@ -11,12 +11,20 @@ const FieldExample: React.FC<Props> = (props) => {
       <h1>Field</h1>
       <h2>input with field</h2>
       <Field name='Username'>
-        <Input placeholder='Please Input Username'></Input>
+        <Input></Input>
+      </Field>
+      <br />
+      <Field name='用户名'>
+        <Input></Input>
       </Field>
 
       <h2>textarea with field</h2>
       <Field name='Description'>
-        <Textarea placeholder='Please Input Description'></Textarea>
+        <Textarea></Textarea>
+      </Field>
+      <br />
+      <Field name='描述'>
+        <Textarea></Textarea>
       </Field>
     </div>
   )
