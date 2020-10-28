@@ -108,4 +108,26 @@
       background: rgb(107, 163, 255);
     }
   }
+
+  &.secondary {
+    color: #1f69ca;
+    background: transparent;
+
+    &:hover {
+      background: rgba(9, 30, 66, 0.06);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px #3087f8;
+    }
+
+    &:active {
+      color: rgb(0, 82, 204);
+      background: rgba(179, 212, 255, 0.6);
+    }
+
+    &[disabled] {
+      color: #3087f8af;
+    }
+  }
 }

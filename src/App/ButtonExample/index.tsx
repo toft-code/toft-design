@@ -69,6 +69,40 @@ const ButtonExample: React.FC<Props> = (props) => {
         </span>
       </div>
 
+      <h2>Secondary</h2>
+      <div>
+        <span style={{ margin: 10 }}>
+          <Button type='secondary' size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button type='secondary'>Button</Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button type='secondary' size='large'>
+            Button
+          </Button>
+        </span>
+      </div>
+      <div style={{ marginTop: 10 }}>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='secondary' size='small'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='secondary'>
+            Button
+          </Button>
+        </span>
+        <span style={{ margin: 10 }}>
+          <Button disabled type='secondary' size='large'>
+            Button
+          </Button>
+        </span>
+      </div>
+
       <h2>Text</h2>
       <div>
         <span style={{ margin: 10 }}>

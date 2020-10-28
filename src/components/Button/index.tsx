@@ -5,7 +5,7 @@ import './index.scss'
 type Props = {
   disabled?: boolean
   onClick?: Function
-  type?: 'default' | 'primary' | 'text'
+  type?: 'default' | 'primary' | 'text' | 'secondary'
   size?: 'large' | 'normal' | 'small'
 }
 
@@ -19,6 +19,7 @@ const Button: React.FC<Props> = (props) => {
         button: true,
         primary: type === 'primary',
         default: type === 'default',
+        secondary: type === 'secondary',
         text: type === 'text',
         disabled,
         large: size === 'large',
