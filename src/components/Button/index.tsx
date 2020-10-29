@@ -4,16 +4,17 @@ import './index.scss'
 
 type Props = {
   disabled?: boolean
-  onClick?: Function
+  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
   type?: 'default' | 'primary' | 'text' | 'secondary'
   size?: 'large' | 'normal' | 'small'
 }
 
 const Button: React.FC<Props> = (props) => {
-  const { children, type = 'default', size, disabled = false } = props
+  const { onClick, children, type = 'default', size, disabled = false } = props
 
   return (
     <button
+      onClick={onClick}
       disabled={disabled}
       className={cn({
         button: true,
