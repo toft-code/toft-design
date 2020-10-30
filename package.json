@@ -1,5 +1,5 @@
 {
-  "name": "toft-design",
+  "name": "@toft-code/toft-design",
   "version": "0.1.0",
   "dependencies": {
     "@types/classnames": "^2.2.10",
