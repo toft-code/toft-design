@@ -1,0 +1,16 @@
+$backgroundColor: rgba(0, 12, 34, 0.25);
+$pointerEvents: 'initial';
+$blanketIndex: 1000;
+
+.blanket {
+  background: $backgroundColor;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(4px);
+  pointer-events: $pointerEvents;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 220ms;
+  z-index: $blanketIndex;
+}

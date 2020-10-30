@@ -23,6 +23,9 @@ const Nav: React.FC<NavProps> = (props) => {
         <Link to='/field'>
           <li className='nav-item'>Field</li>
         </Link>
+        <Link to='/blanket'>
+          <li className='nav-item'>Blanket</li>
+        </Link>
         <Link to='/tag'>
           <li className='nav-item'>Tag</li>
         </Link>

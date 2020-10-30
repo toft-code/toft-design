@@ -8,6 +8,7 @@ import TextareaExample from './TextareaExample'
 import MainTitle from './MainTitle'
 import Nav from '../components/Nav'
 import FieldExample from './FieldExample'
+import BlanketExample from './BlanketExample'
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
             </Route>
             <Route path='/field'>
               <FieldExample></FieldExample>
+            </Route>
+            <Route path='/blanket'>
+              <BlanketExample></BlanketExample>
             </Route>
             <Route path='/'>
               <MainTitle></MainTitle>
